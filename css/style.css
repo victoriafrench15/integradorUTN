@@ -1,0 +1,89 @@
+body{
+    margin:0%;
+    padding: 0%;
+}
+
+.title{
+    text-align: center;
+    color: rgb(144, 147, 148);
+}
+
+.div_titulo{
+    display: flex;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.home_nav{
+    background-color: rgb(227, 231, 232);
+    padding: 10px;
+}
+
+.home_nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+.home_nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.home_nav ul li :hover{
+    text-decoration: none;
+    color: rgb(109, 106, 106);
+}
+
+.error{
+    font-size: 6rem;
+}
+.error404{
+    font-size: 3rem;
+}
+
+img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.logo_dentista{
+    width: 10px;
+    height: 10px;
+}
+
+.formulario{
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+}
+
+input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.boton{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+
