@@ -15,7 +15,7 @@
                 <li><a href="index.php?ruta=home">HOME</a></li>
                 <li><a href="index.php?ruta=registro">REGISTRO</a></li>
                 <li><a href="index.php?ruta=turnos">TURNOS</a></li>
-                <li><a href="index.php?ruta=contacto">CONTACTO</a></li>
+                <li><a href="index.php?ruta=salir">SALIR</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +26,7 @@
                     $_GET["ruta"]== "home" ||
                     $_GET["ruta"] == "registro" ||
                     $_GET["ruta"] == "turnos" ||
-                    $_GET["ruta"] == "contacto"
+                    $_GET["ruta"] == "salir"
                 ){
                     include "paginas/" . $_GET["ruta"] . ".php";
                 } else{
