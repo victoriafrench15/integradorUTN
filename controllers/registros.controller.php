@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ERROR | E_PARSE);
 class ControllerRegistros{
 
 	static public function ctrRegistro(){
@@ -12,6 +12,8 @@ class ControllerRegistros{
 			$datos = array(
 				"nombre" => $_POST["registroNombre"],
 				"email" => $_POST["registroEmail"],
+				"turno" => $_POST["registroTurno"],
+				"especializacion" => $_POST["registroEspecializacion"],
 				"password" => $encriptarPassword
 			);
 			$respuesta = ModeloRegistros::mdlRegistro($tabla, $datos);
@@ -51,7 +53,7 @@ class ControllerRegistros{
 						window.history.replaceState( null, null, window.location.href );
 					}
 				</script>';
-				echo '<div class="alert alert-danger">Error al ingresar al sistema, el email o la contraseña no coinciden</div>';
+				echo '<div class="error-message">Error al ingresar al sistema, el email o la contraseña no coinciden</div>';
 			}
 		}
 	}
@@ -68,6 +70,8 @@ class ControllerRegistros{
 				"id" => $_POST["idUsuario"],
 				"nombre" => $_POST["actualizarNombre"],
 				"email" => $_POST["actualizarEmail"],
+				"turno" => $_POST["actualizarTurno"],
+				"especializacion" => $_POST["actualizarEspecializacion"],
 				"password" => $password
 			);
 

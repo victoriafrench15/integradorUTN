@@ -11,16 +11,16 @@
 	
 	<div class="container_inicio">
 		
-		<img src="img/clinicaDental.jfif" class="foto_inicio">
+		<img src="img/clinicaDental.jpg" class="foto_inicio">
 
-		<form class="formulario" method="post">
+		<form class="formulario formulario_inicioSesion" method="post">
 			<h4 class="title">INICIO DE SESION</h4>
 			<div>
 				<label for="email">Correo electrónico:</label>
-				<input type="email" class="" name="ingresoEmail">
+				<input type="email"  name="ingresoEmail">
 				
 				<label for="pwd">Contraseña:</label>
-				<input type="password" class="" name="ingresoPassword">
+				<input type="password"  name="ingresoPassword">
 			</div>
 			<?php 
 			$ingreso = new ControllerRegistros();

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Turnos</title>
+    <title>Dentistas</title>
 </head>
 <body>
-    <h4 class="title">Estos son nuestros dentistas:</h4>
+    <h4 class="title title_dentistas">Listado de dentistas</h4>
     <?php
 
 if(!isset($_SESSION["validarIngreso"])){
@@ -34,6 +34,8 @@ $usuarios = ControllerRegistros::ctrSeleccionarRegistros(null, null);
 			<th>ID</th>
 			<th>Nombre</th>
 			<th>Email</th>
+			<th>Turno</th>
+			<th>Especializacion</th>
 			<th>Acciones</th>
 		</tr>
 	</thead>
@@ -46,6 +48,8 @@ $usuarios = ControllerRegistros::ctrSeleccionarRegistros(null, null);
 			<td><?php echo ($key+1); ?></td>
 			<td><?php echo $value["nombre"]; ?></td>
 			<td><?php echo $value["email"]; ?></td>
+			<td><?php echo $value["turno"]; ?></td>
+			<td><?php echo $value["especializacion"]; ?></td>
 			<td>
 
 			<div>		

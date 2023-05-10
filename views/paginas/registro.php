@@ -20,6 +20,12 @@
                 <label for="email">Email: </label>
                 <input type="email" id="email" name="registroEmail">
 
+                <label for="turno">Turno: </label>
+                <input type="text" id="turno" name="registroTurno">
+
+                <label for="especializacion">Especialización: </label>
+                <input type="text" id="especializacion" name="registroEspecializacion">
+
                 <label for="pwd">Contraseña:</label>
                 <input type="password" id="pwd" name="registroPassword">
             </div>
@@ -34,7 +40,7 @@
                         }
                         </script>';
                         
-                    echo '<div> El dentista se ha registrado con exito </div>';
+                    echo '<div class="exito-message"> El dentista se ha registrado con exito </div>';
                     }
                     if ($registro == "error"){
                     echo '<script> 
@@ -43,11 +49,11 @@
                     }
                     </script>';
                     
-                    echo '<div> Error, no se permiten caracteres especiales </div>';
+                    echo '<div class="error-message" > Error, no se permiten caracteres especiales </div>';
                     }
             ?> 
 
-            <button type="submit" name="ingresar" class="boton">Ingresar</button>
+            <button type="submit" name="ingresar" class="boton">Registrar</button>
             </form>
         </div>
     </div>
