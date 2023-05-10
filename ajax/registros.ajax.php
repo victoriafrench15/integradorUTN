@@ -1,7 +1,7 @@
 <?php
 
-require_once "../controladores/registros.controller.php";
-require_once "../modelos/registros.modelo.php";
+require_once "../controllers/registros.controller.php";
+require_once "../models/registros.modelo.php";
 
 
 class AjaxRegistros{
@@ -14,8 +14,6 @@ class AjaxRegistros{
 		$respuesta = ControllerRegistros::ctrSeleccionarRegistros($item, $valor);
 		echo json_encode($respuesta);
 	}
-
-
 }
 
 

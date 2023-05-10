@@ -10,5 +10,6 @@
 <body>
     <h2 class="title error">Not found</h2>
     <h4 class="title error404">Error 404</h4>
+    <a href="index.php?ruta=inicio"> Volver </a>
 </body>
 </html>

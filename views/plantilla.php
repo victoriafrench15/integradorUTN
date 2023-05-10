@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +19,10 @@
         </div>
         <nav class="home_nav">
             <ul>
-                <li><a href="index.php?ruta=inicio">INICIO</a></li>
-                <li><a href="index.php?ruta=registro">REGISTRAR</a></li>
+                <li><a href="index.php?ruta=inicio">INICIAR SESION</a></li>
+                <li><a href="index.php?ruta=registro">REGISTRAR DENTISTAS</a></li>
                 <li><a href="index.php?ruta=dentistas"> VER DENTISTAS</a></li>
-                <li><a href="index.php?ruta=salir">SALIR</a></li>
+                <li><a href="index.php?ruta=salir">CERRAR SESION</a></li>
             </ul>
         </nav>
     </header>
@@ -38,12 +42,12 @@
                 }
             
             } else{
-                echo "";
+                echo "paginas/inicio.php";
             }
             ?>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="vistas/js/script.js"></script>
+    <script src="views/js/script.js"></script>
 </body>
 </html>

@@ -28,17 +28,17 @@ $usuarios = ControllerRegistros::ctrSeleccionarRegistros(null, null);
 
 ?>
 
-<table>
-	<thead>
+<table class="table">
+	<thead class="table_head">
 		<tr>
-			<th>#</th>
+			<th>ID</th>
 			<th>Nombre</th>
 			<th>Email</th>
 			<th>Acciones</th>
 		</tr>
 	</thead>
 
-	<tbody>
+	<tbody class="table_body">
 
 	<?php foreach ($usuarios as $key => $value): ?>
 
@@ -69,6 +69,3 @@ $usuarios = ControllerRegistros::ctrSeleccionarRegistros(null, null);
 	
 	</tbody>
 </table>
-
-</body>
-</html>

@@ -25,8 +25,27 @@
             </div>
 
             <?php
-                $reservas = ControllerRegistros::ctrRegistro();
-            ?>
+                $registro = ControllerRegistros::ctrRegistro();
+                if($registro =="ok"){
+                
+                    echo '<script> 
+                        if (window.history.replaceState){
+                        window.history.replaceState(null,null, window.location.href);
+                        }
+                        </script>';
+                        
+                    echo '<div> El dentista se ha registrado con exito </div>';
+                    }
+                    if ($registro == "error"){
+                    echo '<script> 
+                    if (window.history.replaceState){
+                        window.history.replaceState(null,null, window.location.href);
+                    }
+                    </script>';
+                    
+                    echo '<div> Error, no se permiten caracteres especiales </div>';
+                    }
+            ?> 
 
             <button type="submit" name="ingresar" class="boton">Ingresar</button>
             </form>
