@@ -1,9 +1,9 @@
 <?php
 
-require_once "controllers/inicio.controller.php";
-require_once "controllers/usuarios.controller.php";
-require_once "models/usuarios.modelo.php";
+require_once "controllers/plantilla.controller.php";
+require_once "controllers/registros.controller.php";
+require_once "models/registros.modelo.php";
 
-$inicio = new ControllerInicio();
+$inicio = new ControllerPlantilla();
 
-$inicio->ctrGetInicio();
+$inicio->ctrGetPlantilla();

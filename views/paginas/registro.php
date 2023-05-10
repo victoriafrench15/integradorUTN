@@ -8,9 +8,11 @@
     <title>Reservas</title>
 </head>
 <body>
-    <h4 class="title">Formulario de registro de turno</h4>
-    <div>
-        <form class="formulario" method="post" >
+    <div class="container_registro">
+        
+        <div>
+            <form class="formulario" method="post" >
+            <h4 class="title">FORMULARIO DE REGISTRO DE DENTISTAS</h4>
             <div>
                 <label for="nombre">Nombre: </label>
                 <input type="text" id="nombre" name="registroNombre">
@@ -23,11 +25,12 @@
             </div>
 
             <?php
-                $reservas = ControllerReservas::ctrRegistro();
+                $reservas = ControllerRegistros::ctrRegistro();
             ?>
 
             <button type="submit" name="ingresar" class="boton">Ingresar</button>
-        </form>
+            </form>
+        </div>
     </div>
 </body>
 </html>

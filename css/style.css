@@ -8,8 +8,14 @@ body{
     color: rgb(144, 147, 148);
 }
 
-.div_titulo{
-    display: flex;
+.div_titulo {
+    justify-content:space-around ;
+} 
+
+.logo_dentista{
+    width: 4rem;
+    height: 4rem;
+    margin-left: 48vw;
 }
 
 h1{
@@ -45,14 +51,19 @@ h1{
     font-size: 3rem;
 }
 
-img{
-    width: 15rem;
-    height: 15rem;
+.container_inicio{
+    display: flex;
+    margin-top: 3rem;
 }
 
-.logo_dentista{
-    width: 4rem;
-    height: 4rem;
+.foto_inicio{
+    width: 50vw;
+    height: 30vw;
+} 
+
+.container_registro{
+    width: 80%;
+    margin-left: 25vw;
 }
 
 .formulario{
@@ -66,12 +77,13 @@ img{
 
 input{
     display: block;
-    width: 100%;
+    width: 95%;
     border: none;
     border-bottom: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 20px;
     font-size: 16px;
+    border-radius: 0.5rem;
 }
 
 .boton{
@@ -82,6 +94,7 @@ input{
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    margin-left: 45%;
 }
 
 

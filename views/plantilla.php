@@ -9,12 +9,15 @@
 </head>
 <body>
     <header>
-        <div class="div_titulo"><h1 class="title">CLINICA DENTAL </h1> <img src="img/dentista.png" class="logo_dentista"></div>
+        <div class="div_titulo">
+            <h1 class="title">CLINICA DENTAL </h1> 
+            <img src="img/dentista.png" class="logo_dentista">
+        </div>
         <nav class="home_nav">
             <ul>
-                <li><a href="index.php?ruta=home">HOME</a></li>
-                <li><a href="index.php?ruta=registro">REGISTRO</a></li>
-                <li><a href="index.php?ruta=turnos">TURNOS</a></li>
+                <li><a href="index.php?ruta=inicio">INICIO</a></li>
+                <li><a href="index.php?ruta=registro">REGISTRAR</a></li>
+                <li><a href="index.php?ruta=dentistas"> VER DENTISTAS</a></li>
                 <li><a href="index.php?ruta=salir">SALIR</a></li>
             </ul>
         </nav>
@@ -23,9 +26,10 @@
         <?php 
             if (isset($_GET["ruta"])){
                 if(
-                    $_GET["ruta"]== "home" ||
+                    $_GET["ruta"]== "inicio" ||
                     $_GET["ruta"] == "registro" ||
-                    $_GET["ruta"] == "turnos" ||
+                    $_GET["ruta"] == "dentistas" ||
+                    $_GET["ruta"] == "editar" ||
                     $_GET["ruta"] == "salir"
                 ){
                     include "paginas/" . $_GET["ruta"] . ".php";
@@ -38,5 +42,8 @@
             }
             ?>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="vistas/js/script.js"></script>
 </body>
 </html>
