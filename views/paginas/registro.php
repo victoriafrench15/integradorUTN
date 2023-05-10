@@ -15,10 +15,10 @@
             <h4 class="title">FORMULARIO DE REGISTRO DE DENTISTAS</h4>
             <div>
                 <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="registroNombre">
+                <input type="text" id="nombre" name="registroNombre" required>
                 
                 <label for="email">Email: </label>
-                <input type="email" id="email" name="registroEmail">
+                <input type="email" id="email" name="registroEmail" required>
 
                 <label for="turno">Turno: </label>
                 <input type="text" id="turno" name="registroTurno">
@@ -27,7 +27,7 @@
                 <input type="text" id="especializacion" name="registroEspecializacion">
 
                 <label for="pwd">Contraseña:</label>
-                <input type="password" id="pwd" name="registroPassword">
+                <input type="password" id="pwd" name="registroPassword" required>
             </div>
 
             <?php
@@ -49,7 +49,7 @@
                     }
                     </script>';
                     
-                    echo '<div class="error-message" > Error, no se permiten caracteres especiales </div>';
+                    echo '<div class="error-message" > Error. El campo nombre no permite caracteres especiales</div>';
                     }
             ?> 
 

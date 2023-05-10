@@ -53,7 +53,7 @@ class ControllerRegistros{
 						window.history.replaceState( null, null, window.location.href );
 					}
 				</script>';
-				echo '<div class="error-message">Error al ingresar al sistema, el email o la contraseña no coinciden</div>';
+				echo '<div class="error-message">Error, el email o la contraseña no coinciden</div>';
 			}
 		}
 	}
